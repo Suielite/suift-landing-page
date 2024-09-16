@@ -19,11 +19,13 @@ const Homepage = () => {
       <Perks />
       <HeaderComponent title="Key Features" />
       <Features />
+
       <Testimonials />
-      <div className="faq w-full mt-10 px-[30px] sm:px-[70px] lg:px-[120px] ">
-        <HeaderComponent title="Frequently Asked Questions" />
-        <FaqSection />
-      </div>
+
+
+      <HeaderComponent title="Frequently Asked Questions" />
+      <FaqSection />
+
     </div>
   )
 }
