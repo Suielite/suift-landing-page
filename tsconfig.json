@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "app/components/FaqItem.jsx", "app/components/FaqSection.jsx", "app/components/FeaturesCard.jsx", "app/components/FeaturesShadowCard.jsx", "app/components/HeaderComponent.jsx", "app/pages/Homepage.jsx"  ],
   "exclude": [
     "node_modules"
   ]
