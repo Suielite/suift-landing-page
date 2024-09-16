@@ -33,18 +33,20 @@ const FaqSection = () => {
   ];
 
   return (
-    <div className="  flex-col justify-start w-full items-start gap-5 inline-flex">
-      {messages.map((message, index) => {
-        //handle the question and answer
-        return (
-          <FaqItem
-            key={index}
-            message={message}
-            isOpen={openIndex === index}
-            onClick={() => setOpenIndex(openIndex === index ? null : index)}
-          />
-        );
-      })}
+    <div className="faq w-full mt-10 px-[30px] sm:px-[70px] lg:px-[120px] ">
+      <div className="  flex-col justify-start w-full items-start gap-5 inline-flex">
+        {messages.map((message, index) => {
+          //handle the question and answer
+          return (
+            <FaqItem
+              key={index}
+              message={message}
+              isOpen={openIndex === index}
+              onClick={() => setOpenIndex(openIndex === index ? null : index)}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

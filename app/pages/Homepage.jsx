@@ -11,10 +11,8 @@ const Homepage = () => {
       <div id="removeThis" className="h-[400px]"></div>
       <HeaderComponent title="Key Features" />
       <Features />
-      <div className="faq w-full mt-10 px-[30px] sm:px-[70px] lg:px-[120px] ">
-        <HeaderComponent title="Frequently Asked Questions" />
-        <FaqSection />
-      </div>
+      <HeaderComponent title="Frequently Asked Questions" />
+      <FaqSection />
     </div>
   );
 };
