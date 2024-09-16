@@ -63,3 +63,31 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.scroll-content {
+  display: inline-block;
+  animation: scroll-horizontal 20s linear infinite;
+}
+
+.scroll-item {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 24px;
+  color: white;
+}
+
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
