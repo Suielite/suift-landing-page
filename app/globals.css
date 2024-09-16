@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #070322;
   --foreground: #171717;
 }
 
@@ -27,6 +27,14 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .bg-custom-gradient {
+    background-image: linear-gradient(
+      309deg,
+      rgba(165, 105, 245, 0.25) 15.21%,
+      rgba(136, 56, 241, 0.13) 36.7%,
+      rgba(106, 7, 236, 0) 48.93%
+    );
   }
 }
 
