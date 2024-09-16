@@ -11,6 +11,11 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        suse: ["SUSE", "ui-sans-serif", "sans-serif"],
+        Poppins: ["Poppins", "ui-sans-serif", "sans-serif"],
+        Syne: ["Syne", "sans-serif", "sans-serif"],
+      },
     },
   },
   plugins: [],
