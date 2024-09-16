@@ -8,7 +8,7 @@ import { perks } from '../utils/constants'
 
 const Perks = () => {
     return (
-        <section className='w-full h-full py-[3rem] my-[30rem]'>
+        <section className='w-full h-full py-[3rem] mb-[30rem]'>
             <div className='w-full h-full'>
                 <div>
                     <h1 className='text-[60px] font-medium leading-[72px] text-center gradient-text'>Giving you the freedom to <br />

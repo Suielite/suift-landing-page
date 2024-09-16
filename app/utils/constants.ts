@@ -41,3 +41,9 @@ export const perks = [
     image: cardTransparentIcon,
   },
 ];
+
+export const displayCoreFeatures = [
+  "Welcome to Suift",
+  "Privacy is a right, not a luxury",
+  "Blazing Fast Messaging",
+];
