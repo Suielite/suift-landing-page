@@ -1,10 +1,14 @@
 import React from "react";
 import DottedOverlay from "../assets/images/dotted-overlay.png";
+import LightTop from "../assets/images/lightTop.png";
 import Image from "next/image";
 
 const HeroOverlay = () => {
   return (
-    <div className="relative h-[200px] flex justify-center ">
+    <div className="relative h-[400px] flex justify-center ">
+      <div className="absolute z-[50] ">
+        <Image src={LightTop} alt="light top overlay" />
+      </div>
       <div className="dotted absolute h-[250px] ">
         <Image src={DottedOverlay} alt="dotted overlay" />
       </div>
