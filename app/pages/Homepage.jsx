@@ -23,8 +23,7 @@ const Homepage = () => {
       
       */}
       <HeroComponent />
-      {/* remove this its just a place holder for other components that  be above */}
-      {/* <div id="removeThis" className="h-[400px]"></div> */}
+
       <Perks />
       <HeaderComponent title="Key Features" />
       <Features />
