@@ -1,6 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
+// import Hero from "../components/Hero";
 import HeroComponent from "../components/HeroEdited";
 
 import Perks from "../components/Perks";
@@ -11,11 +10,13 @@ import Features from "../components/Features";
 import HeaderComponent from "../components/HeaderComponent";
 import Footer from "../components/Footer";
 
+const OPTIONS = { loop: true }
+// const SLIDE_COUNT = 5
+// const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
+
 const Homepage = () => {
-  console.log("Homepage");
   return (
     <div className="text-white w-screen overflow-x-hidden">
-      {/* <Navbar /> */}
       {/* <Hero /> */}
       {/* rename to hero the reason is the bg image you used was about 4mb which would
        take a lot of time for page load
@@ -28,10 +29,12 @@ const Homepage = () => {
       <HeaderComponent title="Key Features" />
       <Features />
 
-      <Testimonials />
+      <Testimonials options={OPTIONS} />
 
-      <HeaderComponent title="Frequently Asked Questions" />
-      <FaqSection />
+      <div className="flex flex-col mt-[10rem]">
+        <HeaderComponent title="Frequently Asked Questions" />
+        <FaqSection />
+      </div>
       <Footer />
     </div>
   );
