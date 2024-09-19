@@ -10,7 +10,7 @@ const FeaturesCard = ({ features, className, id }) => {
         background:
           "conic-gradient(from 181deg at 50% 50%, rgba(0, 0, 0, 0.00) 172.66420125961304deg, rgba(73, 53, 130, 0.30) 281.25deg, rgba(71, 47, 140, 0.12) 360deg), #393054",
       }}
-      className={`Frame47401 px-8  overflow-hidden  flex flex-col justify-between   w-[310px] h-96 relative  rounded-3xl shadow border border-opacity-20 border-white/20 ${className} `}
+      className={`Frame47401 px-8  overflow-hidden  flex flex-col justify-between min-[1344px]:w-[334px]   w-[310px] h-96 relative  rounded-3xl shadow border border-opacity-20 border-white/20 ${className} `}
     >
       <div className="text flex flex-col ">
         <div className=" font-suse select-txt w-64 min-h-[50px] pb-3  text-white text-3xl font-medium font-['Tomato Grotesk']">

@@ -68,7 +68,7 @@ const BottomColor = () => {
           cx="1541.75"
           cy="566.325"
           fill="#5505FF"
-          fill-opacity=".65"
+          fillOpacity=".65"
           rx="384.49"
           ry="248.046"
         />
@@ -78,7 +78,7 @@ const BottomColor = () => {
           cx="2056.37"
           cy="434.271"
           fill="#5505FF"
-          fill-opacity=".21"
+          fillOpacity=".21"
           rx="384.49"
           ry="248.046"
         />
@@ -103,7 +103,7 @@ const BottomColor = () => {
           cx="2146.09"
           cy="512.789"
           fill="#5505FF"
-          fill-opacity=".25"
+          fillOpacity=".25"
           rx="286.889"
           ry="184.993"
         />
@@ -129,7 +129,7 @@ const BottomColor = () => {
       <g filter="url(#o)">
         <path
           fill="#fff"
-          fill-opacity=".4"
+          fillOpacity=".4"
           d="M536.335 506.452 116.174 366.84l112.111-23.17c226.24 54.261 697.507 172.406 772.655 210.903 93.93 48.122 568.63 23.17 888.8 23.17 256.13 0 701.95-154.464 892.84-231.697l222.2-151.494c-15.49 97.828-208.67 315.108-857.49 401.608-648.83 86.5-1097.2 23.764-1240.284-18.417l-370.671-71.291Z"
         />
       </g>
@@ -140,10 +140,10 @@ const BottomColor = () => {
           height="757.829"
           x="1006.29"
           y="173.635"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur
             result="effect1_foregroundBlur_143_91"
@@ -156,10 +156,10 @@ const BottomColor = () => {
           height="587.541"
           x="1485.42"
           y="213.755"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur
             result="effect1_foregroundBlur_143_91"
@@ -172,10 +172,10 @@ const BottomColor = () => {
           height="587.541"
           x="834.746"
           y="195.909"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur
             result="effect1_foregroundBlur_143_91"
@@ -188,10 +188,10 @@ const BottomColor = () => {
           height="471.757"
           x="1231.29"
           y="332.577"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur
             result="effect1_foregroundBlur_143_91"
@@ -204,10 +204,10 @@ const BottomColor = () => {
           height="503.75"
           x="1505.14"
           y="277.321"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur
             result="effect1_foregroundBlur_143_91"
@@ -220,10 +220,10 @@ const BottomColor = () => {
           height="503.75"
           x="955.022"
           y="259.476"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur
             result="effect1_foregroundBlur_143_91"
@@ -236,10 +236,10 @@ const BottomColor = () => {
           height="866.845"
           x="971.879"
           y="132.902"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur
             result="effect1_foregroundBlur_143_91"
@@ -252,10 +252,10 @@ const BottomColor = () => {
           height="866.845"
           x="1486.5"
           y=".848"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur
             result="effect1_foregroundBlur_143_91"
@@ -268,10 +268,10 @@ const BottomColor = () => {
           height="866.845"
           x="971.879"
           y="122.196"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur
             result="effect1_foregroundBlur_143_91"
@@ -284,10 +284,10 @@ const BottomColor = () => {
           height="337.278"
           x="1219.53"
           y="419.693"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur
             result="effect1_foregroundBlur_143_91"
@@ -300,10 +300,10 @@ const BottomColor = () => {
           height="740.74"
           x="1673.82"
           y="142.419"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur
             result="effect1_foregroundBlur_143_91"
@@ -316,10 +316,10 @@ const BottomColor = () => {
           height="428.927"
           x="1226.67"
           y="302.58"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur
             result="effect1_foregroundBlur_143_91"
@@ -332,10 +332,10 @@ const BottomColor = () => {
           height="248.156"
           x="1065.65"
           y="504.108"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur
             result="effect1_foregroundBlur_143_91"
@@ -348,10 +348,10 @@ const BottomColor = () => {
           height="676.936"
           x=".174"
           y="78.552"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur
             result="effect1_foregroundBlur_143_91"
@@ -364,10 +364,10 @@ const BottomColor = () => {
           height="676.936"
           x=".174"
           y="78.552"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur
             result="effect1_foregroundBlur_143_91"

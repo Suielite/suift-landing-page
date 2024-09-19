@@ -14,10 +14,13 @@ const EmblaCarouselRev = (props) => {
   const { getScreenMatch } = useWindowManager();
   const { setNextBtnFxn, setPrevBtnFxn, key } = useEmblaContext();
 
-  const nextSkewClass = " sm:skew-y-[15deg] skew-y-[2deg] origin-right";
+  const nextSkewClass =
+    " sm:skew-y-[15deg] skew-y-[2deg]  translate-y-[10px]sm:translate-y-[0px] origin-right";
 
-  const genSkewClass = " skew-y-0 sm:translate-y-[-85px] translate-y-[0px]   ";
-  const prevSkewClass = " sm:skew-y-[-15deg] skew-y-[-2deg] origin-left";
+  const genSkewClass =
+    " skew-y-0 sm:translate-y-[-85px] translate-y-[-20px]   ";
+  const prevSkewClass =
+    " sm:skew-y-[-15deg] skew-y-[-2deg] translate-y-[10px] sm:translate-y-[0px] origin-left";
 
   const logSlidesInView = useCallback((emblaApi) => {
     const totalSlides = slides.length;
@@ -71,12 +74,12 @@ const EmblaCarouselRev = (props) => {
       largeStyle: "translateY(-85px)",
     });
     nextcarRevId.style.transform = getScreenMatch({
-      smallStyle: "skewY(4deg)",
+      smallStyle: "skewY(4deg) translateY(10px)",
       mediumStyle: "skewY(15deg)",
       largeStyle: "skewY(15deg)",
     });
     prevcarRevId.style.transform = getScreenMatch({
-      smallStyle: "skewY(-4deg)",
+      smallStyle: "skewY(-4deg)  translateY(10px)",
       mediumStyle: "skewY(-15deg)",
       largeStyle: "skewY(-15deg)",
     });
@@ -101,7 +104,10 @@ const EmblaCarouselRev = (props) => {
   }, [emblaApi, logSlidesInView]);
 
   return (
-    <section id="rev" className="embla pb-[110px]  w-fit ">
+    <section
+      id="rev"
+      className="embla features pb-[110px]  w-fit   max-w-[62rem] min-[1364px]:max-w-[68rem]"
+    >
       <div className="embla__viewport pt-5 sm:pt-[90px]" ref={emblaRef}>
         <div className="embla__container  ">
           {slides.map((index) => (

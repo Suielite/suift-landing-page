@@ -69,7 +69,7 @@ const MiddleCircle = () => {
             x=".75"
             y=".75"
             stroke="#fff"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             rx="58.25"
           />
           <path
@@ -85,8 +85,8 @@ const MiddleCircle = () => {
               y2="118"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#8547F6" />
-              <stop offset="1" stop-color="#DDCBFF" />
+              <stop stopColor="#8547F6" />
+              <stop offset="1" stopColor="#DDCBFF" />
             </linearGradient>
           </defs>
         </svg>
@@ -118,8 +118,8 @@ const Ellipse4 = () => {
             />
             <path
               stroke="url(#gb)"
-              stroke-opacity=".25"
-              stroke-width=".558"
+              strokeOpacity=".25"
+              strokeWidth=".558"
               d="M548.727 325.336c0 108.669-94.103 196.794-210.224 196.794s-210.224-88.125-210.224-196.794c0-108.67 94.103-196.795 210.224-196.795s210.224 88.125 210.224 196.795Z"
             />
           </g>
@@ -132,8 +132,8 @@ const Ellipse4 = () => {
               y2="522.41"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#77679F" stop-opacity="0" />
-              <stop offset="1" stop-color="#C8497F" />
+              <stop stopColor="#77679F" stopOpacity="0" />
+              <stop offset="1" stopColor="#C8497F" />
             </linearGradient>
             <filter
               id="ga"
@@ -141,10 +141,10 @@ const Ellipse4 = () => {
               height="648.761"
               x=".693"
               y=".955"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
               filterUnits="userSpaceOnUse"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feBlend
                 in="SourceGraphic"
                 in2="BackgroundImageFix"
@@ -179,14 +179,14 @@ const Ellipse3 = () => {
               cx="381"
               cy="379.717"
               fill="#5505FF"
-              fill-opacity=".65"
+              fillOpacity=".65"
               rx="195"
               ry="194.284"
             />
             <path
               stroke="url(#fb)"
-              stroke-opacity=".25"
-              stroke-width=".558"
+              strokeOpacity=".25"
+              strokeWidth=".558"
               d="M575.721 379.717c0 107.144-87.179 194.004-194.721 194.004s-194.721-86.86-194.721-194.004c0-107.145 87.179-194.005 194.721-194.005s194.721 86.86 194.721 194.005Z"
             />
           </g>
@@ -199,8 +199,8 @@ const Ellipse3 = () => {
               y2="574.001"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#77679F" stop-opacity="0" />
-              <stop offset="1" stop-color="#C8497F" />
+              <stop stopColor="#77679F" stopOpacity="0" />
+              <stop offset="1" stopColor="#C8497F" />
             </linearGradient>
             <filter
               id="fa"
@@ -208,10 +208,10 @@ const Ellipse3 = () => {
               height="759.321"
               x=".623"
               y=".056"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
               filterUnits="userSpaceOnUse"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feBlend
                 in="SourceGraphic"
                 in2="BackgroundImageFix"
@@ -248,8 +248,8 @@ const Ellipse2 = () => {
             />
             <path
               stroke="url(#wb)"
-              stroke-opacity=".25"
-              stroke-width=".558"
+              strokeOpacity=".25"
+              strokeWidth=".558"
               d="M575.721 380.33c0 107.145-87.179 194.005-194.721 194.005s-194.721-86.86-194.721-194.005S273.458 186.326 381 186.326s194.721 86.859 194.721 194.004Z"
             />
           </g>
@@ -262,8 +262,8 @@ const Ellipse2 = () => {
               y2="574.614"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#77679F" stop-opacity="0" />
-              <stop offset="1" stop-color="#C8497F" />
+              <stop stopColor="#77679F" stopOpacity="0" />
+              <stop offset="1" stopColor="#C8497F" />
             </linearGradient>
             <filter
               id="wa"
@@ -271,10 +271,10 @@ const Ellipse2 = () => {
               height="759.321"
               x=".623"
               y=".67"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
               filterUnits="userSpaceOnUse"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feBlend
                 in="SourceGraphic"
                 in2="BackgroundImageFix"
@@ -308,8 +308,8 @@ const Ellipse1 = ({ className }) => {
             <ellipse cx="264" cy="111.171" fill="#fff" rx="200" ry="47.057" />
             <path
               stroke="url(#tb)"
-              stroke-opacity=".25"
-              stroke-width=".558"
+              strokeOpacity=".25"
+              strokeWidth=".558"
               d="M463.721 111.171c0 6.329-5.462 12.447-15.574 18.072-10.088 5.612-24.704 10.675-42.79 14.93-36.166 8.51-86.143 13.775-141.357 13.775s-105.191-5.265-141.357-13.775c-18.086-4.255-32.702-9.318-42.79-14.93-10.112-5.625-15.574-11.743-15.574-18.072 0-6.329 5.462-12.448 15.574-18.073 10.088-5.612 24.704-10.674 42.79-14.93C158.809 69.66 208.786 64.393 264 64.393s105.191 5.266 141.357 13.775c18.086 4.256 32.702 9.318 42.79 14.93 10.112 5.625 15.574 11.744 15.574 18.073Z"
             />
           </g>
@@ -322,8 +322,8 @@ const Ellipse1 = ({ className }) => {
               y2="158.228"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#77679F" stop-opacity="0" />
-              <stop offset="1" stop-color="#C8497F" />
+              <stop stopColor="#77679F" stopOpacity="0" />
+              <stop offset="1" stopColor="#C8497F" />
             </linearGradient>
             <filter
               id="ta"
@@ -331,10 +331,10 @@ const Ellipse1 = ({ className }) => {
               height="222.114"
               x="0"
               y=".114"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
               filterUnits="userSpaceOnUse"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feBlend
                 in="SourceGraphic"
                 in2="BackgroundImageFix"
@@ -372,10 +372,10 @@ const TopLayer = () => {
               height="866"
               x="0"
               y="0"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
               filterUnits="userSpaceOnUse"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 result="hardAlpha"
@@ -430,7 +430,7 @@ const BackLayer1 = () => {
             <path
               d="M283.091 209.298L70 99.9454L126.858 81.7976C241.6 124.298 480.61 216.836 518.72 246.989C566.358 284.681 807.11 265.137 969.49 265.137C1099.39 265.137 1325.49 144.152 1422.31 83.6589L1535 -35C1527.15 41.6242 1429.17 211.811 1100.11 279.562C771.049 347.314 543.649 298.176 471.082 265.137L283.091 209.298Z"
               fill="white"
-              fill-opacity="0.4"
+              fillOpacity="0.4"
             />
           </g>
           <defs>
@@ -441,9 +441,9 @@ const BackLayer1 = () => {
               width="1697"
               height="580.5"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feBlend
                 mode="normal"
                 in="SourceGraphic"
@@ -485,10 +485,10 @@ const BackLayer2 = () => {
               height="580.5"
               x="0"
               y=".523"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
               filterUnits="userSpaceOnUse"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feBlend
                 in="SourceGraphic"
                 in2="BackgroundImageFix"
@@ -520,7 +520,7 @@ const CurvedLine = () => {
           <path
             d="M 0 0 A 850 550 0 0 0 1600 0"
             stroke="url(#paint0_linear_1_1281)"
-            stroke-width="10"
+            strokeWidth="10"
           />
           <defs>
             <linearGradient
@@ -531,9 +531,9 @@ const CurvedLine = () => {
               y2="186"
               gradientUnits="userSpaceOnUse"
             >
-              <stop offset="0.0855182" stop-color="white" stop-opacity="0" />
-              <stop offset="0.5" stop-color="white" />
-              <stop offset="0.905239" stop-color="white" stop-opacity="0" />
+              <stop offset="0.0855182" stopColor="white" stopOpacity="0" />
+              <stop offset="0.5" stopColor="white" />
+              <stop offset="0.905239" stopColor="white" stopOpacity="0" />
             </linearGradient>
           </defs>
         </svg>
@@ -555,7 +555,7 @@ const CurvedLine2 = () => {
           <path
             d="M 0 0 A 850 550 0 0 0 1600 0"
             stroke="url(#paint0_linear_1_1281)"
-            stroke-width="10"
+            strokeWidth="10"
           />
           <defs>
             <linearGradient
@@ -566,9 +566,9 @@ const CurvedLine2 = () => {
               y2="186"
               gradientUnits="userSpaceOnUse"
             >
-              <stop offset="0.0855182" stop-color="gray" stop-opacity="0" />
-              <stop offset="0.5" stop-color="gray" />
-              <stop offset="0.905239" stop-color="gray" stop-opacity="0" />
+              <stop offset="0.0855182" stopColor="gray" stopOpacity="0" />
+              <stop offset="0.5" stopColor="gray" />
+              <stop offset="0.905239" stopColor="gray" stopOpacity="0" />
             </linearGradient>
           </defs>
         </svg>

@@ -3,6 +3,7 @@ import logo from "../assets/images/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import BottomColor from "./BottomColor";
+import { ChevronsRight, ChevronsRightIcon } from "lucide-react";
 
 const Footer = () => {
   const links = [
@@ -29,16 +30,16 @@ const Footer = () => {
   ];
 
   return (
-    <footer className=" w-screen overflow-hidden relative mt-[120px] sm:mt-60">
-      <div className="sm:p-[120px] p-[30px] pb-[0px] w-full">
-        <div className="Frame47433 w-full  gap-y-[40px] grid grid-cols-12">
-          <div className="sm:col-[1/5] flex justify-center items-start  sm:inline col-span-6">
+    <footer className=" w-screen overflow-hidden relative mt-[100px]  sm:mt-40">
+      <div className="lg:p-[120px]  sm:p-[80px] p-[30px] lg:pb-[0px] pb-[0px] w-full">
+        <div className="Frame47433 w-full   gap-y-[40px] grid grid-cols-12">
+          <div className="lg:col-[1/3] flex justify-center items-start   col-span-6">
             <div className="w-[100px]">
               <Image src={logo} className="w-full h-full" alt="logo" />
             </div>
           </div>
-          <div className=" justify-center  col-span-6 sm:col-[5/8] font-syne sm:justify-between items-start flex">
-            <div className="Frame1475 font-Poppins flex-col justify-start items-start gap-6 inline-flex">
+          <div className=" justify-center  col-span-6 lg:col-[3/8] bg-ed-300 font-syne  items-start flex">
+            <div className="Frame1475 font-Poppins flex-col justify-start items-start gap-4 inline-flex">
               <div className="QuickLinks text-white text-sm font-bold ">
                 Quick Links
               </div>
@@ -47,45 +48,46 @@ const Footer = () => {
                   <Link
                     key={index}
                     href={link.href}
-                    className="text-white underline-under decoration-slate-400 underline-offset-2 transf text-sm font-normal"
+                    className="text-white underline-under flex items-center gap-1  decoration-slate-400 underline-offset-2 transf text-sm font-normal"
                   >
+                    <ChevronsRightIcon size={16} />
                     {link.title}
                   </Link>
                 ))}
               </div>
             </div>
           </div>
-          <div className="Frame47432   justify-center  col-span-full sm:col-[8/12] flex-col sm:justify-start items-start gap-7 inline-flex">
-            <div className="Frame47431 self-stretch  flex-col gap-5 justify-between items-start flex">
-              <div className="Frame47430  py-0.5 flex-row gap-1 sm:flex-col justify-start items-start gap- flex">
+          <div className="Frame47432   justify-center  col-span-full lg:col-[8/13]  items-start gap-7 inline-flex">
+            <div className="Frame47431   flex-col gap-5 justify-between items-start flex">
+              <div className="Frame47430  py-0.5 flex-row gap-1 lg:flex-col justify-start items-start gap- flex">
                 <div
                   style={{
                     WebkitTextFillColor: "transparent",
                   }}
-                  className="bg-gradient-to-b from-[#FFFFFF] to-slate-600 bg-clip-text    mx-auto text-center flex justify-center  font-Syne w-full font-semibold text-2xl sm:text-4xl"
+                  className="bg-gradient-to-b from-[#FFFFFF] to-slate-600 bg-clip-text    mx-auto text-center flex justify-center  font-Syne w-full font-semibold text-2xl sm:text-3xl "
                 >
                   <h1>Join the Suift </h1>
                 </div>
 
-                <div className="Community self-stretch text-white text-2xl sm:text-[32px] font-semibold font-['Tomato Grotesk']">
+                <div className="Community self-stretch text-white text-2xl sm:text-3xl  font-semibold font-['Tomato Grotesk']">
                   Community
                 </div>
               </div>
-              <div className="w-[320px] sm:w-fit pl-5  rounded-[99px] border border-[#77679f] justify-between items-center gap-1 sm:gap-[52px] inline-flex">
+              <div className="w-fit max-w-full  pl-5  rounded-[99px] border border-[#77679f] justify-between items-center flex">
                 <input
                   type="text"
                   placeholder="Enter Your Gmail"
-                  className="EnterYourGmail shrink-0 w-[200px] outline-none  bg-transparent text-white sm:text-lg text-sm font-medium "
+                  className="EnterYourGmail grow shrink outline-none  bg-transparent text-white sm:text-lg text-sm font-medium "
                 />
 
-                <div className=" bg-gradient-to-b hover:bg-gradient-to-t hover:pb-[1px] active:p-[0.4px] rounded-full from-[#77679F] to-[rgba(119,103,159,0)] pt-[1px] px-[1px]">
+                <div className="shrink-0 bg-gradient-to-b hover:bg-gradient-to-t hover:pb-[1px] active:p-[0.4px] rounded-full from-[#77679F] to-[rgba(119,103,159,0)] pt-[1px] px-[1px]">
                   <div className="rounded-full bg-background">
                     <button
                       style={{
                         background:
                           "conic-gradient(from 270deg at 50% 50%, #140F2A 0deg, rgba(100, 67, 194, 0.25) 58.25deg, rgba(71, 47, 140, 0.10) 290deg)",
                       }}
-                      className="font-syne w-[90px] h-[50px] sm:w-[140px]    p-[10px_15px] sm:p-[10px_35px] rounded-[0] sm:rounded-full text-white font-normal sm:text-lg text-sm   "
+                      className="font-syne  h-[50px]    p-[10px_15px] sm:p-[10px_35px] rounded-[0] sm:rounded-full text-white font-normal sm:text-lg text-sm   "
                     >
                       Join us
                     </button>
@@ -98,11 +100,10 @@ const Footer = () => {
                 <FaceBook />
               </div>
             </div>
-            <div className="Frame1471 justify-start items-start gap-3 inline-flex" />
           </div>
         </div>
       </div>
-      <div className=" w-full overflow-hidden h-[400px] sm:h-[400px] bg-emeald-200 relative">
+      <div className=" w-full overflow-hidden h-[400px] bg-emeald-200 relative">
         <MainOverlay />
         <ColoredBottom />
       </div>
@@ -124,7 +125,7 @@ const ColoredBottom = () => {
 
 const MainOverlay = () => {
   return (
-    <div className="absolute  z-[10] w-full -top-[0px] left-0 flex justify-center">
+    <div className="absolute  z-[10] w-full -top-[00px] left-0 flex justify-center">
       <div className="w-fit">
         <svg
           xmlns="http://www.w3.org/2000/svg"
