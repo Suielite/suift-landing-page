@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useEffect, useCallback } from "react";
-import { EmblaOptionsType, EmblaCarouselType } from "embla-carousel";
 
 import {
   PrevButton,
@@ -17,6 +16,7 @@ const EmblaCarousel = (props) => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const { clickNext, clickPrev, setSlide } = useEmblaContext();
+
   const [currSlide, setCurrSlide] = useState({
     currSlide: 1,
     nextSlide: 2,
@@ -131,7 +131,7 @@ const EmblaCarousel = (props) => {
     }
   }, [emblaApi, currSlide.currSlide]);
   return (
-    <section className="embla z-2  ">
+    <section className="embla z-2 features max-w-[62rem] min-[1364px]:max-w-[68rem]">
       <div className="embla__viewport pt-6 sm:pt-[30px]" ref={emblaRef}>
         <div className="embla__container  pt-6 sm:pt-36 ">
           {slides.map((index) => (
