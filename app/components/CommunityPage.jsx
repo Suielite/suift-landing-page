@@ -53,38 +53,58 @@ const SvgComponent = () => {
           offset: 0.75,
           text: "That was amazing! Greatjob!",
           user: "Ugwu Chidi",
-          image: "/potraits/user1.jpg",
+          image: "/potraits/chidi.jpg",
         },
         {
           pathId: "#mediumPath",
           offset: 0.55,
           text: "Highly Recommended!",
           user: "Josh Sparks",
-          image: "/potraits/user2.jpg",
+          image: "/potraits/josh.jpg",
         },
         {
           pathId: "#largePath",
           offset: 0.2,
           text: "The results are outstanding!",
           user: "Mike James",
-          image: "/potraits/user1.jpg",
+          image: "/potraits/tim.jpg",
         },
         {
           pathId: "#largePath",
           offset: 0.3,
           text: "Nice work, love it!🔥",
           user: "Ugbor Charles",
-          image: "/potraits/user2.jpg",
+          image: "/potraits/your.jpg",
         },
       ].map((item) => ({
         ...item,
         ...getPointAtOffset(item.pathId, item.offset),
       }));
       const roundRositions = [
-        { pathId: "#mediumPath", offset: 0.13, text: "Medium 2" },
-        { pathId: "#largePath", offset: 0.4, text: "Large 1" },
-        { pathId: "#smallPath", offset: 0.65, text: "Small 2" },
-        { pathId: "#smallPath", offset: 0.87, text: "Small 2" },
+        {
+          pathId: "#mediumPath",
+          offset: 0.13,
+          text: "Medium 2",
+          image: "/potraits/henry.jpg",
+        },
+        {
+          pathId: "#largePath",
+          offset: 0.4,
+          text: "Large 1",
+          image: "/potraits/your.jpg",
+        },
+        {
+          pathId: "#smallPath",
+          offset: 0.65,
+          text: "Small 2",
+          image: "/potraits/divine.jpg",
+        },
+        {
+          pathId: "#smallPath",
+          offset: 0.87,
+          text: "Small 2",
+          image: "/potraits/divine.jpg",
+        },
       ].map((item) => ({
         ...item,
         ...getPointAtOffset(item.pathId, item.offset),
@@ -214,7 +234,15 @@ const SvgComponent = () => {
               stroke="#524080"
               strokeWidth="1"
             />
-
+            <circle
+              transform={`translate(${pos.x}, ${pos.y})`}
+              cx="42"
+              cy="39"
+              r="25.5"
+              strokeOpacity={0.2}
+              strokeWidth="1.6"
+              stroke="#070322"
+            />
             <image
               x="12"
               y="9"
@@ -259,7 +287,12 @@ const SvgComponent = () => {
                 <stop offset="0%" style={{ stopColor: "#ffffff" }} />
                 <stop offset="100%" style={{ stopColor: "#ffffff" }} />
               </linearGradient>
-              <clipPath fill="#fff" id="circle-clip2">
+              <clipPath
+                stroke="#fff"
+                strokeWidth="1"
+                fill="#fff"
+                id="circle-clip2"
+              >
                 <circle
                   cx="0"
                   cy="-50"
@@ -269,14 +302,23 @@ const SvgComponent = () => {
                 />
               </clipPath>
             </defs>
-
+            <circle
+              cx="0"
+              transform={`translate(${pos.x}, ${pos.y})`}
+              cy="-50"
+              r="26"
+              strokeWidth="1.6"
+              stroke="#aaa"
+            />
             <image
               x="-26"
               y="-75"
               width="55"
               transform={`translate(${pos.x}, ${pos.y})`}
               height="55"
-              href="/potraits/user1.jpg"
+              stroke="#fff"
+              strokeWidth="2"
+              href={pos.image}
               clipPath="url(#circle-clip2)"
             />
             <circle

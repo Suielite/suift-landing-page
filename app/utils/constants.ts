@@ -42,7 +42,7 @@ export const perks = [
   {
     title: "Transparent Polling & Secure Wallet",
     description:
-      "Seamless Voting and Easy TransactionsSuift makes voting and fund transfers effortless. Organize polls and track votes on the blockchain with absolute transparency, ensuring that results can be revisited at any time. With our integrated wallet, sending and receiving funds is as easy as sending a message—simply use a username to make secure transactions swiftly and safely.",
+      "Seamless Voting and Easy Transactions; Suift makes voting and fund transfers effortless. Organize polls and track votes on the blockchain with absolute transparency, ensuring that results can be revisited at any time. With our integrated wallet, sending and receiving funds is as easy as sending a message—simply use a username to make secure transactions swiftly and safely.",
     image: cardTransparentIcon,
   },
 ];
