@@ -1,5 +1,9 @@
-import Image from "next/image";
+import Homepage from "./pages/Homepage";
 
 export default function Home() {
-  return <div className="">Sui Elite dev</div>;
+  return (
+    <div className="">
+      <Homepage />
+    </div>
+  );
 }
