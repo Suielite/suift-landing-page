@@ -8,7 +8,7 @@ import HeroOverlay from "./HeroOverlay";
 
 const HeroEdited = () => {
   return (
-    <section className=" h-[150dvh]">
+    <section className=" md:h-[150dvh]">
       <div className="w-full h-full">
         <div className="relative h-full w-full">
           <div className="relative w-full h-full z-10">
@@ -41,8 +41,8 @@ const HeroEdited = () => {
             </div>
 
             <div className="w-full flex justify-center my-20">
-              <div className="w-[70%] h-full flex bg-gradient-to-r from-[#B779F533] to-[#8547F61A] rounded-2xl">
-                <div className="w-1/2 px-4 flex items-center gap-x-5">
+              <div className="w-[70%] h-full flex flex-col md:flex-row  bg-gradient-to-r from-[#B779F533] to-[#8547F61A] rounded-2xl">
+                <div className="md:w-1/2 px-4 pb-5 md:pb-0 flex flex-col md:flex-row items-center gap-x-5">
                   <div>
                     <Image
                       src={blockImage}
@@ -51,25 +51,25 @@ const HeroEdited = () => {
                     />
                   </div>
                   <div className="flex flex-col gap-y-2">
-                    <h2 className="text-[23px] leading-[32.2px] font-medium">
+                    <h2 className="text-[23px] text-center md:text-start leading-[32.2px] font-medium">
                       Give You 100% Privacy
                     </h2>
-                    <p className="text-[18px] leading-[24.3px] font-normal">
+                    <p className="text-[18px] text-center md:text-start leading-[24.3px] font-normal">
                       Give You 100% Security. <br />
                       Give You 100% Security
                     </p>
                   </div>
                 </div>
 
-                <div className="w-1/2 px-4 flex justify-between items-center gap-x-5 border-l-[1px] border-gray-100">
+                <div className="md:w-1/2 px-4 pb-5 md:pb-0 flex flex-col md:flex-row justify-between items-center gap-x-5 border-t-[1px] md:border-t-0 md:border-l-[1px] border-gray-100">
                   <div>
                     <h1 className="text-[80px] font-medium">90%</h1>
                   </div>
                   <div className="flex flex-col gap-y-2">
-                    <h2 className="text-[23px] leading-[32.2px] font-medium">
+                    <h2 className="text-[23px] text-center md:text-start leading-[32.2px] font-medium">
                       Give You 100% Security
                     </h2>
-                    <p className="text-[18px] leading-[24.3px] font-normal">
+                    <p className="text-[18px] text-center md:text-start leading-[24.3px] font-normal">
                       Give You 100% Security. Give You 100% Security
                     </p>
                   </div>
