@@ -12,7 +12,7 @@ const InteractiveSemicircle = () => {
             Messaging just got sui&#8209;ft and secure with the Sui Blockchain.
           </div>
           <div className=" bg-gradient-to-b hover:bg-gradient-to-t hover:pb-[1px] active:p-[0.4px] rounded-full from-[#77679F] to-[rgba(119,103,159,0)] pt-[1px] px-[1px]">
-            <div className=" rounded-full bg-background">
+            <div className=" rounded-full   bg-[#070322] ">
               <button
                 style={{
                   background:
