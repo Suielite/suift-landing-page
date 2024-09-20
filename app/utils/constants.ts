@@ -1,3 +1,4 @@
+import { Home, Info, Layers, MessageCircle } from "lucide-react";
 import cardFastIcon from "../assets/images/perks/card-fast-icon.png";
 import cardPrivacyIcon from "../assets/images/perks/card-privacy-icon.png";
 import cardTransparentIcon from "../assets/images/perks/card-transparent-icon.png";
@@ -6,18 +7,22 @@ export const navLinks = [
   {
     name: "Home",
     link: "#home",
+    icon: Home,
   },
   {
     name: "About",
     link: "#about",
+    icon: Info,
   },
   {
     name: "Features",
     link: "#features",
+    icon: Layers,
   },
   {
     name: "Reviews",
     link: "#reviews",
+    icon: MessageCircle,
   },
 ];
 
@@ -37,7 +42,7 @@ export const perks = [
   {
     title: "Transparent Polling & Secure Wallet",
     description:
-      "Seamless Voting and Easy TransactionsSuift makes voting and fund transfers effortless. Organize polls and track votes on the blockchain with absolute transparency, ensuring that results can be revisited at any time. With our integrated wallet, sending and receiving funds is as easy as sending a message—simply use a username to make secure transactions swiftly and safely.",
+      "Seamless Voting and Easy Transactions; Suift makes voting and fund transfers effortless. Organize polls and track votes on the blockchain with absolute transparency, ensuring that results can be revisited at any time. With our integrated wallet, sending and receiving funds is as easy as sending a message—simply use a username to make secure transactions swiftly and safely.",
     image: cardTransparentIcon,
   },
 ];

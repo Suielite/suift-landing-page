@@ -3,7 +3,7 @@ import React from "react";
 const TestimonialCard = ({ title, name, description }) => {
   return (
     <div className="md:w-[650px] sm:w-[530px] w-[300px]    sm:h-[300px]  h-[420px] rounded-3xl p-[1px] bg-gradient-to-b from-white to-[#77679F]     ">
-      <div className="rounded-3xl   overflow-hidden h-full bg-background">
+      <div className="rounded-3xl   overflow-hidden h-full   bg-[#070322] ">
         <div
           style={{
             // boxShadow: " 0px 0px 100px 0px #140F2A",
