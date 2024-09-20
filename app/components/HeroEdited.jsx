@@ -41,7 +41,7 @@ const HeroEdited = () => {
             </div>
 
             <div className="w-full flex justify-center my-20">
-              <div className="md:w-[90%] lg:w-[70%] h-full flex flex-col md:flex-row  bg-gradient-to-r from-[#B779F533] to-[#8547F61A] md:rouded-2xl">
+              <div className="md:w-[90%] lg:w-[70%] h-full flex flex-col md:flex-row  bg-gradient-to-r from-[#B779F533] to-[#8547F61A] md:rounded-2xl">
                 <div className="md:w-1/2 px-4 pb-5 md:pb-0 flex flex-col md:flex-row items-center gap-x-5">
                   <div>
                     <Image
