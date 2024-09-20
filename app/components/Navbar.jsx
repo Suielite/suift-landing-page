@@ -71,11 +71,8 @@ const Navbar = () => {
                   <nav className=" flex-grow">
                     <div className="space-y-4 p-2 pt-7 ">
                       {navLinks.map(({ icon: Icon, name, link }) => (
-                        <SheetClose asChild>
-                          <div
-                            key={name}
-                            className="border-purple-400 mt-6 border  rounded-full"
-                          >
+                        <SheetClose key={name} asChild>
+                          <div className="border-purple-400 mt-6 border  rounded-full">
                             <Link
                               href={link}
                               className="flex items-center space-x-6 text-gray-300 hover:text-white  rounded-lg px-4 py-3 transition-all duration-200 group"
