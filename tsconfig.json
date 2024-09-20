@@ -16,7 +16,17 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "baseUrl": ".",
+    // "paths": {
+    //   // Add paths for import aliases
+    //   "@components/*": ["app/components/*"],
+    //   "@pages/*": ["app/pages/*"]
+    // }
+    "paths": {
+      // Add paths for import aliases
+      "@/*": ["./app/*"]
+    }
   },
   "include": [
     "next-env.d.ts",

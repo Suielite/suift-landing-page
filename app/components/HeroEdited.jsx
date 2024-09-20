@@ -8,7 +8,7 @@ import HeroOverlay from "./HeroOverlay";
 
 const HeroEdited = () => {
   return (
-    <section className=" md:h-[150dvh]">
+    <section className="lg:h-[150dvh]">
       <div className="w-full h-full">
         <div className="relative h-full w-full">
           <div className="relative w-full h-full z-10">
@@ -41,7 +41,7 @@ const HeroEdited = () => {
             </div>
 
             <div className="w-full flex justify-center my-20">
-              <div className="w-[70%] h-full flex flex-col md:flex-row  bg-gradient-to-r from-[#B779F533] to-[#8547F61A] rounded-2xl">
+              <div className="md:w-[90%] lg:w-[70%] h-full flex flex-col md:flex-row  bg-gradient-to-r from-[#B779F533] to-[#8547F61A] rounded-2xl">
                 <div className="md:w-1/2 px-4 pb-5 md:pb-0 flex flex-col md:flex-row items-center gap-x-5">
                   <div>
                     <Image
@@ -54,7 +54,7 @@ const HeroEdited = () => {
                     <h2 className="text-[23px] text-center md:text-start leading-[32.2px] font-medium">
                       Give You 100% Privacy
                     </h2>
-                    <p className="text-[18px] text-center md:text-start leading-[24.3px] font-normal">
+                    <p className="md:text-[17px] lg:text-[18px] text-center md:text-start leading-[24.3px] font-normal">
                       Give You 100% Security. <br />
                       Give You 100% Security
                     </p>
@@ -69,7 +69,7 @@ const HeroEdited = () => {
                     <h2 className="text-[23px] text-center md:text-start leading-[32.2px] font-medium">
                       Give You 100% Security
                     </h2>
-                    <p className="text-[18px] text-center md:text-start leading-[24.3px] font-normal">
+                    <p className="md:text-[17px] lg:text-[18px] text-center md:text-start leading-[24.3px] font-normal">
                       Give You 100% Security. Give You 100% Security
                     </p>
                   </div>

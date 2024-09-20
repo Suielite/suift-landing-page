@@ -9,7 +9,7 @@ import HeaderComponent from './HeaderComponent'
 
 const Perks = () => {
     return (
-        <section className='w-full h-full py-[3rem] '>
+        <section className='w-full h-full py-[3rem] lg:mb-[30rem]'>
             <div className='w-full h-full'>
                 <div className='px-5'>
                     <div className='md:hidden'>
@@ -37,25 +37,25 @@ const Perks = () => {
                 </div>
 
                 <div className='relative w-full flex justify-center'>
-                    <div className="flex flex-col md:flex-row gap-y-10 md:gap-y-0 px-5 md:px-0 justify-between md:w-[1255.17px] md:h-[24rem]">
-                        <div className='w-full md:w-[30%] mt-16'>
-                            <div className='md:absolute md:top-[27%]'>
+                    <div className="flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 px-5 lg:px-0 justify-between lg:w-[1255.17px] lg:h-[24rem]">
+                        <div className='w-full lg:w-[30%] mt-16'>
+                            <div className='lg:absolute lg:top-[27%]'>
                                 <PerkCard
                                     title={perks[0].title}
                                     description={perks[0].description}
                                 />
                             </div>
                         </div>
-                        <div className='w-full md:w-[30%]'>
-                            <div className='md:absolute md:top-[100%]'>
+                        <div className='w-full lg:w-[30%]'>
+                            <div className='lg:absolute lg:top-[100%]'>
                                 <PerkCard
                                     title={perks[1].title}
                                     description={perks[1].description}
                                 />
                             </div>
                         </div>
-                        <div className='w-full md:w-[28%]'>
-                            <div className='md:absolute md:top-[27%]'>
+                        <div className='w-full lg:w-[28%]'>
+                            <div className='lg:absolute lg:top-[27%]'>
                                 <PerkCard
                                     title={perks[2].title}
                                     description={perks[2].description}
