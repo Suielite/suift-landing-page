@@ -11,7 +11,7 @@ const Perks = () => {
     return (
         <section className='w-full h-full py-[3rem] '>
             <div className='w-full h-full'>
-                <div>
+                <div className='px-5'>
                     <div className='md:hidden'>
                         <HeaderComponent title="Giving you the freedom to communicate on your own terms" />
                     </div>

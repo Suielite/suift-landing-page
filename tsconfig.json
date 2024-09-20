@@ -1,10 +1,6 @@
 {
   "compilerOptions": {
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -26,9 +22,14 @@
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "app/components/FaqItem.jsx", "app/components/FaqSection.jsx", "app/components/FeaturesCard.jsx", "app/components/FeaturesShadowCard.jsx", "app/components/HeaderComponent.jsx", "app/pages/Homepage.jsx", "app/components/BottomColor.jsx"  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "**/*.tsx",
+    "app/components/FaqItem.jsx",
+    "app/components/FaqSection.jsx",
+    "app/components/FeaturesCard.jsx",
+    "app/components/FeaturesShadowCard.jsx",
+    "app/components/HeaderComponent.jsx",
+    "app/pages/Homepage.jsx",
+    "app/components/BottomColor.jsx"
+  ],
+  "exclude": ["node_modules"]
 }
