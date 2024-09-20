@@ -12,7 +12,7 @@ const HeroOverlay = () => {
       <div className="dotted absolute h-[250px] ">
         <Image src={DottedOverlay} alt="dotted overlay" />
       </div>
-      <div className="mt-[190px]  overflow-hidden  h-[570px] g-red-400  w-full relative">
+      <div className=" lg:mt-[190px] sm:mt-[150px] mt-[120px]  overflow-hidden  h-[570px] g-red-400  w-full relative">
         <CurvedLine />
         <CurvedLine2 />
         <BackLayer1 />

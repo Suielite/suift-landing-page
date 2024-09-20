@@ -27,7 +27,7 @@ const FaqItem = ({ message, isOpen, onClick }) => {
     >
       <div
         className={clsx(
-          "self-stretch relative z-[0]  overflow-hidden bg-background bg-clip-padding rounded-3xl   border border-transparent  flex flex-col  ",
+          "self-stretch relative z-[0]  overflow-hidden   bg-[#070322]  bg-clip-padding rounded-3xl   border border-transparent  flex flex-col  ",
           {
             " border-white/20": isOpen,
             "border-white/5 border-opacity-[1]": !isOpen,
