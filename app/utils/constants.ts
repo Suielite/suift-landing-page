@@ -1,4 +1,4 @@
-import { Home, Info, Layers, MessageCircle } from "lucide-react";
+import { Home, Info, Layers, LockOpen, MessageCircle } from "lucide-react";
 import cardFastIcon from "../assets/images/perks/card-fast-icon.png";
 import cardPrivacyIcon from "../assets/images/perks/card-privacy-icon.png";
 import cardTransparentIcon from "../assets/images/perks/card-transparent-icon.png";
@@ -23,6 +23,11 @@ export const navLinks = [
     name: "Reviews",
     link: "#reviews",
     icon: MessageCircle,
+  },
+  {
+    name: "Login",
+    link: "/login",
+    icon: LockOpen,
   },
 ];
 
