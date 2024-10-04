@@ -36,7 +36,11 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex justify-center gap-x-5 w-1/3">
           {navLinks.map((link) => (
-            <Link key={link.name} href={link.link} className="text-white">
+            <Link
+              key={link.name}
+              href={link.link}
+              className="text-white underline-under underline items-center gap-1  decoration-slate-400 underline-offset-2 flex  shrink-0"
+            >
               {link.name}
             </Link>
           ))}
