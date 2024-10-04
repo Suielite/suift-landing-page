@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
         ></link>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} w-screen overflow-x-hidden antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable}  w-screen overflow-x-hidden antialiased`}
       >
         {children}
       </body>
