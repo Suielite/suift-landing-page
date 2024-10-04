@@ -15,6 +15,7 @@ const Features = () => {
       </div>
       <div className="px-[120px] flex justify-center  w-full">
         <CommunityPage />
+        {/* add a blur glow here */}
       </div>
     </div>
   );

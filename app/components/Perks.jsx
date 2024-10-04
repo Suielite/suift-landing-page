@@ -50,7 +50,7 @@ const Perks = () => {
         </div>
 
         <div className="relative bgred-200 w-full flex justify-center">
-          <div className="flex relative bg-geen-200 flex-col lg:flex-row gap-y-10 lg:gap-y-0 px-5 lg:px-0 justify-between bg-red lg:w-[1055.17px] min-[1300]:w-[1255] lg:h-[24rem]">
+          <div className="flex relative bg-geen-200 flex-col lg:flex-row gap-y-10 lg:gap-y-0 px-5 lg:px-0 justify-between bg-red lg:w-[1055.17px] min-[1300px]:w-[1255] lg:h-[24rem]">
             <div className="w-fit lg:absolute lg:top-[10%] lg:-left-[30px] lg:-[30%] mt-16">
               <div className="">
                 <PerkCard

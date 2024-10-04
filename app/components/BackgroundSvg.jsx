@@ -1,10 +1,10 @@
-const BackgroundSvg = () => {
+const BackgroundSvg = ({ width, height }) => {
   return (
     <div className="">
-      <Top1Path />
+      <Top1Path width={width} height={height} />
       <div className="h-full   relative overflow-hidden">
-        <Top2Path />
-        <Top3Path />
+        <Top2Path width={width} height={height} />
+        <Top3Path width={width} height={height} />
       </div>
     </div>
   );
@@ -12,13 +12,15 @@ const BackgroundSvg = () => {
 
 export default BackgroundSvg;
 
-const Top2Path = () => {
+const Top2Path = ({ width, height }) => {
   return (
     <div className=" bg-purle-800 ">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="1600"
-        height="290"
+        // width="1600"
+        // height="290"
+        height={height}
+        width={width}
         fill="none"
         viewBox="0 0 1436 290"
       >
@@ -37,7 +39,7 @@ const Top2Path = () => {
   );
 };
 
-const Top3Path = () => {
+const Top3Path = ({ width, height }) => {
   return (
     <div
       className=" 
@@ -46,8 +48,10 @@ const Top3Path = () => {
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="1436"
-        height="524"
+        // width="1436"
+        width={width / 1.11}
+        height={height / 0.55}
+        // height="524"
         viewBox="0 0 1436 524"
         fill="none"
       >
@@ -93,13 +97,15 @@ const Top3Path = () => {
   );
 };
 
-const Top1Path = () => {
+const Top1Path = ({ width, height }) => {
   return (
     <div className=" relative -top-8 left-[120px]">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="1289"
-        height="92"
+        // width="1289"
+        width={width / 1.24}
+        height={height / 3.15}
+        // height="92"
         overflow="hidden"
         viewBox="0 0 1289 52"
         className="absolute overflow-hidden h-[6rem] -top-7 left-0"

@@ -27,7 +27,7 @@ const CarouselWrapper = () => {
         </div>
       </div>
       <div className="relative   w-full z-[-1] h-full top-0 left-0 justify-center items-start flex">
-        <MattedBackground />
+        <MattedBackground width={1600} height={290} />
       </div>
     </EmblaContextProvider>
   );
