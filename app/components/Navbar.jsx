@@ -9,8 +9,6 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
-  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -46,10 +44,14 @@ const Navbar = () => {
           ))}
         </div>
         <div className="hidden md:flex">
-          <div className="bg-gradient-to-r from-[#472F8C66] to-[#8A2C8F]  flex gap-x-2 px-3 py-2 rounded-full">
-            <Image src={star} className="w-[20px] h-[20px]" alt="star" />
-            <button className="capitalize text-white">Get Early Access</button>
-          </div>
+          <Link href="signup">
+            <div className="bg-gradient-to-r from-[#472F8C66] to-[#8A2C8F]  flex gap-x-2 px-3 py-2 rounded-full">
+              <Image src={star} className="w-[20px] h-[20px]" alt="star" />
+              <button className="capitalize text-white">
+                Get Early Access
+              </button>
+            </div>
+          </Link>
         </div>
 
         <div className="md:hidden">
@@ -81,7 +83,7 @@ const Navbar = () => {
                               href={link}
                               className="flex items-center space-x-6 text-gray-300 hover:text-white  rounded-lg px-4 py-3 transition-all duration-200 group"
                             >
-                              <span className="relative  ">
+                              <span className="relative">
                                 <Icon
                                   size={20}
                                   className="group-hover:opacity-0 transition-opacity text-white duration-200"
@@ -102,16 +104,19 @@ const Navbar = () => {
 
                   <div className="flex-shrink-0 pb-9  text-base">
                     <div className="w-[200px]">
-                      <div className="bg-gradient-to-r from-[#472F8C66] to-[#8A2C8F] justify-center flex gap-x-2 px-4 py-4 rounded-full">
+                      <Link
+                        href="/signup"
+                        className="bg-gradient-to-r from-[#472F8C66] to-[#8A2C8F] justify-center flex gap-x-2 px-4 py-4 rounded-full"
+                      >
                         <Image
                           src={star}
                           className="w-[20px] h-[20px]"
                           alt="star"
                         />
-                        <button className="capitalize text-white">
+                        <span className="capitalize text-white">
                           Get Early Access
-                        </button>
-                      </div>
+                        </span>
+                      </Link>
                     </div>
                   </div>
                 </div>
