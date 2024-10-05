@@ -45,7 +45,9 @@ const page = () => {
               size="lg"
               className="w-full font-suse text-base bg-white text-black hover:text-black hover:bg-slate-200"
             >
-              Sign in
+              <Link href="/chat" className="w-full">
+                Sign in
+              </Link>
             </Button>
           </div>
         </div>
@@ -111,9 +113,9 @@ const page = () => {
           </div>
         </div>
         <div className="self-stretch px-20 py-4 bg-[#c8497f] rounded-xl justify-center items-center gap-2 inline-flex">
-          <div className="text-center text-white text-sm font-medium font-['Inter'] leading-tight">
+          <Link href="/chat" className="w-full text-center text-white text-sm font-medium font-['Inter'] leading-tight">
             Sign in
-          </div>
+          </Link>
         </div>
       </div>
     </>
