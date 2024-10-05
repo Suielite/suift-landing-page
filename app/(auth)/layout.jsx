@@ -2,6 +2,7 @@ import Image from "next/image";
 import AuthMattedBackground from "./_components/AuthMattedBackground";
 import MobileAuth from "./_components/MobileAuth";
 import AuthMessage from "./_components/AuthMessage";
+import Navbar from "@/components/Navbar";
 
 const layout = ({ children }) => {
   return (

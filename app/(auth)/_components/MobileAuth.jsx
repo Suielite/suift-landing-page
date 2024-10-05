@@ -4,6 +4,7 @@ import Image from "next/image";
 import { AppleLogo, GoogleLogo } from "../login/page";
 import { AccMessage } from "./AuthMessage";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 const MobileAuth = ({ children }) => {
   return (
     <div className="w-full h-[735px] pt-[23px] bg-[#333747] flex-col justify-start items-center gap-1.5 inline-flex">
@@ -57,7 +58,7 @@ const MobileAuth = ({ children }) => {
             <AppleLogo />
           </div>
           <div className="w-12 h-12 relative  bg-opacity-20 bg-white rounded-[27.27px] border border-[#515978]">
-            <SuiLogo />
+            <SuiLogo className="p-2" />
           </div>
         </div>
         <AccMessage />
@@ -83,15 +84,15 @@ export const PersonIcon = ({ className }) => {
         cy="6.78512"
         r="3.59128"
         stroke="inherit"
-        stroke-width="1.5"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
       />
       <path
         d="M4.77808 16.5286C4.77808 14.1661 8.01114 12.251 11.9993 12.251M4.77808 16.5286C4.77808 18.3635 6.72839 19.9285 9.46803 20.536M4.77808 16.5286C4.77808 18.115 6.23585 19.4996 8.40115 20.2382C9.46049 20.5995 10.6892 20.8062 11.9993 20.8062C13.3095 20.8062 14.5382 20.5995 15.5975 20.2382C17.7628 19.4996 19.2206 18.115 19.2206 16.5286M4.77808 16.5286C4.77808 14.6937 6.72839 13.1287 9.46803 12.5212M11.9993 12.251C13.3095 12.251 14.5382 12.4577 15.5975 12.819M11.9993 12.251C15.9875 12.251 19.2206 14.1661 19.2206 16.5286M11.9993 12.251C10.6892 12.251 9.46049 12.4577 8.40115 12.819M19.2206 16.5286C19.2206 18.3635 17.2703 19.9285 14.5306 20.536M19.2206 16.5286C19.2206 14.6937 17.2703 13.1287 14.5306 12.5212"
         stroke="inherit"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -109,9 +110,9 @@ export const PasswordIcon = ({ className }) => {
       <path
         d="M16.8327 10.4735V6.72849C16.8327 4.05985 14.6694 1.89648 12.0007 1.89648V1.89648C9.33206 1.89648 7.1687 4.05985 7.1687 6.72849V10.4735"
         stroke="inherit"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <rect
         x="3.67114"
@@ -120,9 +121,9 @@ export const PasswordIcon = ({ className }) => {
         height="11.6304"
         rx="5"
         stroke="inherit"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <ellipse
         cx="12.0001"
@@ -130,29 +131,29 @@ export const PasswordIcon = ({ className }) => {
         rx="1.38606"
         ry="1.38606"
         stroke="inherit"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M12.0325 16.9067L12.0325 18.7899"
         stroke="inherit"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
 };
 
-export const SuiLogo = () => {
+export const SuiLogo = ({ className }) => {
   return (
     <svg
       id="Layer_1"
       x="0px"
       y="0px"
       viewBox="0 0 300 383.5"
-      className="w-full h-full p-2"
+      className={cn("w-full h-full", className)}
       style={{ enableBackground: "new 0 0 300 383.5" }}
     >
       <path
@@ -161,7 +162,7 @@ export const SuiLogo = () => {
           clipRule: "evenodd",
           fill: "#4DA2FF",
         }}
-        class="st0"
+        className="st0"
         d="M240.1,159.9c15.6,19.6,25,44.5,25,71.5s-9.6,52.6-25.7,72.4l-1.4,1.7l-0.4-2.2c-0.3-1.8-0.7-3.7-1.1-5.6
 	c-8-35.3-34.2-65.6-77.4-90.2c-29.1-16.5-45.8-36.4-50.2-59c-2.8-14.6-0.7-29.3,3.3-41.9c4.1-12.6,10.1-23.1,15.2-29.4l16.8-20.5
 	c2.9-3.6,8.5-3.6,11.4,0L240.1,159.9L240.1,159.9z M266.6,139.4L154.2,2c-2.1-2.6-6.2-2.6-8.3,0L33.4,139.4l-0.4,0.5
