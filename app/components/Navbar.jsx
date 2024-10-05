@@ -9,8 +9,6 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
-  // SheetDescription,
-  // SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -36,16 +34,22 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex justify-center gap-x-5 w-1/3">
           {navLinks.map((link) => (
-            <Link key={link.name} href={link.link} className="text-white">
+            <Link
+              key={link.name}
+              href={link.link}
+              className="text-white underline-under underline items-center gap-1  decoration-slate-400 underline-offset-2 flex  shrink-0"
+            >
               {link.name}
             </Link>
           ))}
         </div>
         <div className="hidden md:flex">
-          <Link href='signup'>
+          <Link href="signup">
             <div className="bg-gradient-to-r from-[#472F8C66] to-[#8A2C8F]  flex gap-x-2 px-3 py-2 rounded-full">
               <Image src={star} className="w-[20px] h-[20px]" alt="star" />
-              <button className="capitalize text-white">Get Early Access</button>
+              <button className="capitalize text-white">
+                Get Early Access
+              </button>
             </div>
           </Link>
         </div>
@@ -100,7 +104,10 @@ const Navbar = () => {
 
                   <div className="flex-shrink-0 pb-9  text-base">
                     <div className="w-[200px]">
-                      <Link href='/signup' className="bg-gradient-to-r from-[#472F8C66] to-[#8A2C8F] justify-center flex gap-x-2 px-4 py-4 rounded-full">
+                      <Link
+                        href="/signup"
+                        className="bg-gradient-to-r from-[#472F8C66] to-[#8A2C8F] justify-center flex gap-x-2 px-4 py-4 rounded-full"
+                      >
                         <Image
                           src={star}
                           className="w-[20px] h-[20px]"
