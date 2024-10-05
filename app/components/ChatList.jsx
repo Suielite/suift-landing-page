@@ -90,7 +90,7 @@ const ChatList = () => {
     <div className="flex  flex-col w-full  relative  h-full">
       <div
         id="chatContainer"
-        className="flex-1 flex  flex-col  h-full  overflow-hidden  relative overflow-y-auto p-4 space-y-2"
+        className="flex-1  flex hide-scrollbar  flex-col  h-full  overflow-hidden  relative overflow-y-auto p-4 space-y-2"
       >
         {chats.map((chat, i) => (
           <div
