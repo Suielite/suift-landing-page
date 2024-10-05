@@ -63,7 +63,7 @@ const HeroEdited = () => {
 
                 <div className="md:w-1/2 px-4 pb-5 md:pb-0 flex flex-col md:flex-row justify-between items-center gap-x-5 border-t-[1px] md:border-t-0 md:border-l-[1px] border-gray-100">
                   <div>
-                    <h1 className="text-[80px] font-suse font-medium">90%</h1>
+                    <h1 className="text-[80px] font-suse font-medium">100%</h1>
                   </div>
                   <div className="flex flex-col gap-y-2">
                     <h2 className="text-[23px] font-Syne text-center md:text-start leading-[32.2px] font-medium">
