@@ -23,7 +23,7 @@ const AuthMattedBackground = () => {
           r="415"
           fill="#fff"
           className=""
-          fill-opacity=".4"
+          fillOpacity=".4"
         />
       </mask>
       <g
@@ -118,13 +118,13 @@ const AuthMattedBackground = () => {
         />
         <path
           fill="url(#t)"
-          fill-opacity=".5"
+          fillOpacity=".5"
           d="M1176 422.015c0 8.206-323.04 14.991-721.5 14.991S-267 430.221-267 422.015c0-8.205 323.04-14.991 721.5-14.991s721.5 6.786 721.5 14.991Z"
           className="mix-blend-mode:screen "
         />
         <path
           fill="url(#u)"
-          fill-opacity=".5"
+          fillOpacity=".5"
           d="M1098.85 422.015c0 25.09-288.41 45.447-644.35 45.447s-644.348-20.357-644.348-45.447c0-25.09 288.408-45.446 644.348-45.446 355.94 0 644.35 20.356 644.35 45.446Z"
           className="mix-blend-mode:screen "
         />
@@ -135,7 +135,7 @@ const AuthMattedBackground = () => {
         r="415"
         fill="url(#v)"
         className=""
-        fill-opacity=".4"
+        fillOpacity=".4"
       />
       <defs>
         <linearGradient
@@ -146,8 +146,8 @@ const AuthMattedBackground = () => {
           y2="715.049"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff" />
-          <stop offset="1" stop-color="#070322" />
+          <stop stopColor="#fff" />
+          <stop offset="1" stopColor="#070322" />
         </linearGradient>
         <linearGradient
           id="f"
@@ -157,8 +157,8 @@ const AuthMattedBackground = () => {
           y2="713.964"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff" />
-          <stop offset="1" stop-color="#070322" />
+          <stop stopColor="#fff" />
+          <stop offset="1" stopColor="#070322" />
         </linearGradient>
         <linearGradient
           id="g"
@@ -168,8 +168,8 @@ const AuthMattedBackground = () => {
           y2="710.138"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff" />
-          <stop offset="1" stop-color="#070322" />
+          <stop stopColor="#fff" />
+          <stop offset="1" stopColor="#070322" />
         </linearGradient>
         <linearGradient
           id="h"
@@ -179,8 +179,8 @@ const AuthMattedBackground = () => {
           y2="671.129"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff" />
-          <stop offset="1" stop-color="#070322" />
+          <stop stopColor="#fff" />
+          <stop offset="1" stopColor="#070322" />
         </linearGradient>
         <linearGradient
           id="i"
@@ -190,8 +190,8 @@ const AuthMattedBackground = () => {
           y2="671.129"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff" />
-          <stop offset="1" stop-color="#070322" />
+          <stop stopColor="#fff" />
+          <stop offset="1" stopColor="#070322" />
         </linearGradient>
         <linearGradient
           id="j"
@@ -201,8 +201,8 @@ const AuthMattedBackground = () => {
           y2="710.138"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff" />
-          <stop offset="1" stop-color="#070322" />
+          <stop stopColor="#fff" />
+          <stop offset="1" stopColor="#070322" />
         </linearGradient>
         <linearGradient
           id="k"
@@ -212,8 +212,8 @@ const AuthMattedBackground = () => {
           y2="713.964"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff" />
-          <stop offset="1" stop-color="#070322" />
+          <stop stopColor="#fff" />
+          <stop offset="1" stopColor="#070322" />
         </linearGradient>
         <linearGradient
           id="l"
@@ -223,8 +223,8 @@ const AuthMattedBackground = () => {
           y2="715.049"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff" />
-          <stop offset="1" stop-color="#070322" />
+          <stop stopColor="#fff" />
+          <stop offset="1" stopColor="#070322" />
         </linearGradient>
         <linearGradient
           id="m"
@@ -234,8 +234,8 @@ const AuthMattedBackground = () => {
           y2="715.501"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff" />
-          <stop offset="1" stop-color="#070322" />
+          <stop stopColor="#fff" />
+          <stop offset="1" stopColor="#070322" />
         </linearGradient>
         <linearGradient
           id="n"
@@ -245,8 +245,8 @@ const AuthMattedBackground = () => {
           y2="715.73"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff" />
-          <stop offset="1" stop-color="#070322" />
+          <stop stopColor="#fff" />
+          <stop offset="1" stopColor="#070322" />
         </linearGradient>
         <linearGradient
           id="o"
@@ -256,8 +256,8 @@ const AuthMattedBackground = () => {
           y2="715.863"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff" />
-          <stop offset="1" stop-color="#070322" />
+          <stop stopColor="#fff" />
+          <stop offset="1" stopColor="#070322" />
         </linearGradient>
         <linearGradient
           id="p"
@@ -267,8 +267,8 @@ const AuthMattedBackground = () => {
           y2="715.947"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff" />
-          <stop offset="1" stop-color="#070322" />
+          <stop stopColor="#fff" />
+          <stop offset="1" stopColor="#070322" />
         </linearGradient>
         <linearGradient
           id="q"
@@ -278,8 +278,8 @@ const AuthMattedBackground = () => {
           y2="716.003"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff" />
-          <stop offset="1" stop-color="#070322" />
+          <stop stopColor="#fff" />
+          <stop offset="1" stopColor="#070322" />
         </linearGradient>
         <linearGradient
           id="r"
@@ -289,8 +289,8 @@ const AuthMattedBackground = () => {
           y2="716.042"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff" />
-          <stop offset="1" stop-color="#070322" />
+          <stop stopColor="#fff" />
+          <stop offset="1" stopColor="#070322" />
         </linearGradient>
         <linearGradient
           id="s"
@@ -300,8 +300,8 @@ const AuthMattedBackground = () => {
           y2="716.071"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff" />
-          <stop offset="1" stop-color="#070322" />
+          <stop stopColor="#fff" />
+          <stop offset="1" stopColor="#070322" />
         </linearGradient>
         <linearGradient
           id="v"
@@ -311,8 +311,8 @@ const AuthMattedBackground = () => {
           y2="885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2A1A4C" />
-          <stop offset="1" stop-color="#9660F9" />
+          <stop stopColor="#2A1A4C" />
+          <stop offset="1" stopColor="#9660F9" />
         </linearGradient>
 
         <radialGradient
@@ -323,8 +323,8 @@ const AuthMattedBackground = () => {
           gradientTransform="matrix(1024.65 0 0 347.685 454.5 315.5)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset=".01" stop-color="#7320E3" stop-opacity=".2" />
-          <stop offset="1" stop-opacity="0" />
+          <stop offset=".01" stopColor="#7320E3" stopOpacity=".2" />
+          <stop offset="1" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="d"
@@ -334,8 +334,8 @@ const AuthMattedBackground = () => {
           gradientTransform="matrix(-978.473 0 0 -211.906 454.5 597.962)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset=".01" stop-color="#AE4CFF" stop-opacity=".5" />
-          <stop offset="1" stop-opacity="0" />
+          <stop offset=".01" stopColor="#AE4CFF" stopOpacity=".5" />
+          <stop offset="1" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="t"
@@ -345,9 +345,9 @@ const AuthMattedBackground = () => {
           gradientTransform="matrix(721.617 0 0 14.9831 454.5 422.011)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff" />
-          <stop offset=".231" stop-color="#651FFF" />
-          <stop offset="1" stop-opacity="0" />
+          <stop stopColor="#fff" />
+          <stop offset=".231" stopColor="#651FFF" />
+          <stop offset="1" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="u"
@@ -357,9 +357,9 @@ const AuthMattedBackground = () => {
           gradientTransform="matrix(644.344 0 0 45.4574 454.5 422.01)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff" />
-          <stop offset=".231" stop-color="#651FFF" />
-          <stop offset="1" stop-opacity="0" />
+          <stop stopColor="#fff" />
+          <stop offset=".231" stopColor="#651FFF" />
+          <stop offset="1" stopOpacity="0" />
         </radialGradient>
       </defs>
     </svg>
