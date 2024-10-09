@@ -30,7 +30,7 @@ export default HeroOverlay;
 
 const CenterShadows = () => {
   return (
-    <div className="w-full  justify-center  flex  z-[1] absolute">
+    <div className="w-full   justify-center  flex  z-[1] absolute">
       <div className="w-full  overflow-hidden flex justify-center items-start mt-[80px] h-[730px]  relative ">
         <Ellipse1 className="top-3 left-4" />
         <Ellipse1 className="top-4 -left-[60px] size-[40px]" />
@@ -354,7 +354,7 @@ const Ellipse1 = ({ className }) => {
 const TopLayer = () => {
   return (
     <div className="absolute z-10 top-[8px] flex justify-center w-full">
-      <div className="   w-fit  ">
+      <div className="   w-fit   ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="1627"
