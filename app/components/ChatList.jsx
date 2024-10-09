@@ -27,7 +27,7 @@ const ChatList = () => {
       id: 4,
       type: "sent",
       message:
-        "Suif Messenger is a decentralized chat application built on the Sui blockchain",
+        "Suift Messenger is a decentralized chat application built on the Sui blockchain",
       time: "12:34 PM",
     },
     {
