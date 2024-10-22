@@ -106,10 +106,6 @@ const SideBar = ({ isOpen, setIsOpen }) => {
   const dummyUsers = [
     "Chidi",
     "Josh",
-    "Divine",
-    "Wisdom",
-    "Charles",
-    "Henditz",
     "Timothy",
   ];
 

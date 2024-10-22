@@ -1,3 +1,4 @@
+"use client";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import PasswordInput from "../_components/CustomPasswordField";
@@ -5,10 +6,103 @@ import GradientButton from "../_components/GradientButtons";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { PasswordIcon, PersonIcon } from "../_components/MobileAuth";
-import { CircleCheck } from "lucide-react";
+import { CircleCheck, Loader2 } from "lucide-react";
 import { Switch } from "@/components/ui/switch";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { useGoogleLogin } from "@react-oauth/google";
+import {
+  loginWithEmail,
+  loginWithGoogle,
+} from "@/lib/db/authUtils/authFunctions";
+import axios from "axios";
+import { toast } from "sonner";
 
 const page = () => {
+  const [loggingIn, setLoggingIn] = useState(false);
+  const router = useRouter();
+  // log out function to log the user out of google and set the profile array to null
+  const loginWithG = useGoogleLogin({
+    onSuccess: (codeResponse) => {
+      console.log({ codeResponse });
+      axios
+        .get(
+          `https://www.googleapis.com/oauth2/v1/userinfo?access_token=${codeResponse.access_token}`,
+          {
+            headers: {
+              Authorization: `Bearer ${codeResponse.access_token}`,
+              Accept: "application/json",
+            },
+          }
+        )
+        .then(async (res) => {
+          setLoggingIn(true);
+
+          const resp = await loginWithGoogle({
+            email: res.data.email,
+            name: res.data.name,
+            id: res.data.id,
+          });
+          console.log({ resp });
+          setLoggingIn(false);
+          toast.success("Logged in successfully", {
+            //success toast style
+            position: "top-right",
+            style: {
+              background: "#038654",
+              color: "#fff",
+            },
+          });
+          router.push("/chat");
+          console.log({ resp });
+        })
+        .catch((err) => {
+          console.log(err);
+          toast.error(err.message, {
+            //error toast style
+            position: "top-right",
+            style: {
+              background: "#C8497F",
+              color: "#fff",
+            },
+          });
+        });
+    },
+    onError: (error) => console.log("Login Failed:", error),
+  });
+  // log in function to log the user in with email and password
+  const loginWithE = async (e) => {
+    e.preventDefault();
+    setLoggingIn(true);
+    const email = e.target.email_signin.value;
+    const password = e.target.password_signin.value;
+    console.log({ email, password });
+    try {
+      const resp = await loginWithEmail({ email, password });
+      console.log({ resp });
+      toast.success("Logged in successfully", {
+        //success toast style
+        position: "top-right",
+        style: {
+          background: "#038654",
+          color: "#fff",
+        },
+        duration: 3000,
+      });
+      router.push("/chat");
+    } catch (err) {
+      toast.error(err.message, {
+        //error toast style
+        position: "top-right",
+        style: {
+          background: "#C8497F",
+          color: "#fff",
+        },
+      });
+    } finally {
+      setLoggingIn(false);
+    }
+  };
   return (
     <>
       <div className="sm:flex w-96  font-Syne  px-12 py-6 rounded-2xl border border-neutral-600 flex-col justify-start items-center gap-3 hidden">
@@ -19,23 +113,31 @@ const page = () => {
         </div>
         <div className="EmailAndPssword bg-rd-100 w-full flex-col justify-start items-end gap-4 flex">
           <div className="Fields text-white self-stretch  flex-col justify-start items-center gap-5 flex">
-            <div className="Txt self-stretch  flex-col justify-start items-start gap-2 flex">
-              <Label htmlFor="email_signin">E-mail</Label>
-              <Input
-                type="email"
-                id="email_signin"
-                placeholder="teamsuielite@gmail.com"
-                className="bg-transparent"
-              />
-            </div>
-            <div className="Txt self-stretch  flex-col justify-start items-start gap-3 flex">
-              <Label htmlFor="password_signin">Password</Label>
-              <PasswordInput
-                id="password_signin"
-                type="password"
-                className="bg-transparent"
-              />
-            </div>
+            <form
+              className="w-full flex-col justify-start items-center gap-5 flex"
+              id="signin_form"
+              onSubmit={loginWithE}
+            >
+              <div className="Txt self-stretch  flex-col justify-start items-start gap-2 flex">
+                <Label htmlFor="email_signin">E-mail</Label>
+                <Input
+                  type="email"
+                  id="email_signin"
+                  name="email_signin"
+                  placeholder="team3Lite@gmail.com"
+                  className="bg-transparent"
+                />
+              </div>
+              <div className="Txt self-stretch  flex-col justify-start items-start gap-3 flex">
+                <Label htmlFor="password_signin">Password</Label>
+                <PasswordInput
+                  id="password_signin"
+                  name="password_signin"
+                  type="password"
+                  className="bg-transparent"
+                />
+              </div>
+            </form>
           </div>
           <div className="ForgotMyPassword text-neutral-400 text-sm font-normal font-['Montserrat']">
             Forgot my password?
@@ -43,11 +145,20 @@ const page = () => {
           <div className="w-full">
             <Button
               size="lg"
+              form="signin_form"
               className="w-full font-suse text-base bg-white text-black hover:text-black hover:bg-slate-200"
             >
-              <Link href="/chat" className="w-full">
-                Sign in
-              </Link>
+              {loggingIn ? (
+                <>
+                  <Loader2
+                    size={16}
+                    className="animate-spin stroke-orange-300"
+                  />{" "}
+                  signing in..{" "}
+                </>
+              ) : (
+                <span> Sign in</span>
+              )}
             </Button>
           </div>
         </div>
@@ -56,7 +167,11 @@ const page = () => {
         </div>
         <div className=" w-full  flex-col justify-center items-center gap-3 flex">
           <GradientButton Icon={AppleLogo} text="Continue with Apple" />
-          <GradientButton Icon={GoogleLogo} text="Continue with Google" />
+          <GradientButton
+            onClick={loginWithG}
+            Icon={GoogleLogo}
+            text="Continue with Google"
+          />
         </div>
         <div className="w-full flex justify-center">
           <div className="w-fit ">
@@ -113,7 +228,10 @@ const page = () => {
           </div>
         </div>
         <div className="self-stretch px-20 py-4 bg-[#c8497f] rounded-xl justify-center items-center gap-2 inline-flex">
-          <Link href="/chat" className="w-full text-center text-white text-sm font-medium font-['Inter'] leading-tight">
+          <Link
+            href="/chat"
+            className="w-full text-center text-white text-sm font-medium font-['Inter'] leading-tight"
+          >
             Sign in
           </Link>
         </div>
