@@ -7,8 +7,7 @@ import { GoogleOAuthProvider } from "@react-oauth/google";
 
 const layout = ({ children }) => {
   return (
-    <GoogleOAuthProvider clientId={process.env.GOOGLE_CLIENT_ID}>
-      
+
     <>
       <div className="sm:grid hidden sm:grid-cols-2  bg-[#070322] h-screen">
         <div className="bg-[#3A197B]   overflow-hidden flex place-content-center place-items-center  h-full">
@@ -51,7 +50,7 @@ const layout = ({ children }) => {
       <div className="h-full overflow-hidden bg-red-200 w-screen sm:hidden">
         <MobileAuth>{children}</MobileAuth>
       </div>
-    </></GoogleOAuthProvider>
+    </>
   );
 };
 

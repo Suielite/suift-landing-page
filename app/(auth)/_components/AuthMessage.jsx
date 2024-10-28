@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 const AuthMessage = () => {
   const [isSignUp, setIsSignUp] = useState(false);
   const pathName = usePathname();
-  console.log({ pathName });
+  
   useEffect(() => {
     if (pathName === "/signup") {
       setIsSignUp(true);

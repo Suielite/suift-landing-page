@@ -15,7 +15,7 @@ export default function SuiSendButton({
     try {
       // Placeholder for Web3 transaction logic
       await new Promise((resolve) => setTimeout(resolve, 1000));
-      console.log(`Sending ${amount} SUI to ${recipientAddress}`);
+      
     } catch (error) {
       console.error("Transaction failed:", error);
     } finally {

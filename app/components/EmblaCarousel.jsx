@@ -36,7 +36,7 @@ const EmblaCarousel = (props) => {
   const logSlidesInView = useCallback((emblaApi) => {
     const totalSlides = slides.length;
     const currStartId = getMod(emblaApi.selectedScrollSnap() + 1, totalSlides);
-    console.log({ currStartId });
+    
     setSlide(currStartId);
 
     var prevElement, nextElement;
@@ -92,7 +92,7 @@ const EmblaCarousel = (props) => {
   }, []);
   useEffect(() => {
     if (emblaApi) {
-      console.log("emblaApi changed");
+      
       emblaApi.on("select", logSlidesInView);
       const currStartId = emblaApi.selectedScrollSnap();
       const prevStartId = emblaApi.previousScrollSnap();
@@ -112,7 +112,7 @@ const EmblaCarousel = (props) => {
   }, [emblaApi, logSlidesInView]);
   useEffect(() => {
     if (emblaApi) {
-      console.log("emblaApi changed");
+      
 
       const currStartId = emblaApi.selectedScrollSnap();
       const prevStartId = emblaApi.previousScrollSnap();
@@ -159,7 +159,7 @@ const EmblaCarousel = (props) => {
         <PrevButton
           className="size-16 p-4 z-[10]  "
           onClick={() => {
-            console.log("prev clicked");
+            
             onPrevButtonClick();
           }}
           disabled={prevBtnDisabled}

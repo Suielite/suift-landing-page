@@ -19,7 +19,7 @@ const page = () => {
   const router = useRouter();
   const signupWithGoogle = useGoogleLogin({
     onSuccess: (codeResponse) => {
-      console.log({codeResponse})
+      
       axios
         .get(
           `https://www.googleapis.com/oauth2/v1/userinfo?access_token=${codeResponse.access_token}`,
@@ -36,7 +36,7 @@ const page = () => {
             name: res.data.name,
             id: res.data.id,
           });
-          console.log({ res: res.data });
+          
           toast.success("Account created successfully", {
             description: "Welcome to the land of decentralized Messaging",
             //success toast style
@@ -87,7 +87,7 @@ const page = () => {
       });
       router.push("/chat");
     } catch (error) {
-      console.log(error);
+      
       toast.error("Account creation failed", {
         description: error.message,
         //success toast style
@@ -139,6 +139,7 @@ const page = () => {
 
           <div className="w-full mt-3">
             <Button
+            form="signup_form"
               size="lg"
               className="w-full relative font-suse text-base bg-white text-black hover:text-black hover:bg-slate-200"
             >

@@ -90,7 +90,7 @@ const EmblaCarouselRev = (props) => {
     if (emblaApi) {
       setNextBtnFxn({
         fxn: () => {
-          console.log("newnextfxd");
+          
           emblaApi.scrollPrev();
         },
       });

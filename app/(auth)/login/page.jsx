@@ -17,92 +17,11 @@ import {
 } from "@/lib/db/authUtils/authFunctions";
 import axios from "axios";
 import { toast } from "sonner";
+import { saveToLocalStorage } from "@/lib/utils/localstoage";
+import useAuth from "@/hooks/useAuth";
 
 const page = () => {
-  const [loggingIn, setLoggingIn] = useState(false);
-  const router = useRouter();
-  // log out function to log the user out of google and set the profile array to null
-  const loginWithG = useGoogleLogin({
-    onSuccess: (codeResponse) => {
-      console.log({ codeResponse });
-      axios
-        .get(
-          `https://www.googleapis.com/oauth2/v1/userinfo?access_token=${codeResponse.access_token}`,
-          {
-            headers: {
-              Authorization: `Bearer ${codeResponse.access_token}`,
-              Accept: "application/json",
-            },
-          }
-        )
-        .then(async (res) => {
-          setLoggingIn(true);
-
-          const resp = await loginWithGoogle({
-            email: res.data.email,
-            name: res.data.name,
-            id: res.data.id,
-          });
-          console.log({ resp });
-          setLoggingIn(false);
-          toast.success("Logged in successfully", {
-            //success toast style
-            position: "top-right",
-            style: {
-              background: "#038654",
-              color: "#fff",
-            },
-          });
-          router.push("/chat");
-          console.log({ resp });
-        })
-        .catch((err) => {
-          console.log(err);
-          toast.error(err.message, {
-            //error toast style
-            position: "top-right",
-            style: {
-              background: "#C8497F",
-              color: "#fff",
-            },
-          });
-        });
-    },
-    onError: (error) => console.log("Login Failed:", error),
-  });
-  // log in function to log the user in with email and password
-  const loginWithE = async (e) => {
-    e.preventDefault();
-    setLoggingIn(true);
-    const email = e.target.email_signin.value;
-    const password = e.target.password_signin.value;
-    console.log({ email, password });
-    try {
-      const resp = await loginWithEmail({ email, password });
-      console.log({ resp });
-      toast.success("Logged in successfully", {
-        //success toast style
-        position: "top-right",
-        style: {
-          background: "#038654",
-          color: "#fff",
-        },
-        duration: 3000,
-      });
-      router.push("/chat");
-    } catch (err) {
-      toast.error(err.message, {
-        //error toast style
-        position: "top-right",
-        style: {
-          background: "#C8497F",
-          color: "#fff",
-        },
-      });
-    } finally {
-      setLoggingIn(false);
-    }
-  };
+const {loginWithE,loginWithG,loggingIn} = useAuth()
   return (
     <>
       <div className="sm:flex w-96  font-Syne  px-12 py-6 rounded-2xl border border-neutral-600 flex-col justify-start items-center gap-3 hidden">
